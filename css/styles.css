@@ -194,7 +194,7 @@ white : #FFFFFF;*/
 .business-decision.overlay {
   min-height: 600px;
   max-width: 1600px;
-
+  margin: 0 auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
     url('../images/header.jpg');
   background-repeat: no-repeat;
@@ -362,6 +362,7 @@ white : #FFFFFF;*/
 .main-team-list-title {
   text-align: center;
   padding: 30px 0px;
+  background-color: var(--background-color);
 }
 
 .team-title {
@@ -404,7 +405,7 @@ white : #FFFFFF;*/
 .icon-link-team:focus,
 .icon-link-team:hover {
   background-color: var(--button-bcg-color);
-}
+ }
 
 .icon-link {
   /* width: 20px;
@@ -435,10 +436,12 @@ white : #FFFFFF;*/
   margin-right: 0;
 }
 
-.clients-icon {
+
+.button-icon {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--background-color);
   height: 92px;
   width: 170px;
   border: 1px solid #afb1b8;
@@ -446,26 +449,19 @@ white : #FFFFFF;*/
   border-radius: 4px;
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
-  border: 1px solid var(--button-bcg-color);
-}
-
-.button-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.button-icon svg {
   height: 60px;
   width: 106px;
-  background-color: var(--background-color);
-}
-
-.button-icon svg {
   fill: #afb1b8;
 }
 
-.clients-icon:hover .svg-icon,
-.clients-icon:focus .svg-icon {
+.button-icon:hover, 
+.button-icon:focus {
+  border: 1px solid var(--button-bcg-color);
+}
+
+.button-icon:hover .svg-icon,
+.button-icon:focus .svg-icon {
   fill: var(--accent-text-color);
 }
 
@@ -510,7 +506,6 @@ white : #FFFFFF;*/
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  background-color: var(--button-secondary-color);
   color: var(--button-text-secondary-color);
   border-radius: 4px;
   cursor: pointer;
